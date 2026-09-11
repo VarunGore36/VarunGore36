@@ -1,111 +1,198 @@
+<div align="center">
+
+```
+mathematics → software engineering
+```
+
 # Varun Gore
 
-**Mathematics by degree. Software engineer by trade.**
+*Mathematics by degree. Software engineer by trade.*
 
-I build AI systems, developer tooling, and backend infrastructure — software that digs beneath the surface rather than sitting on top of it.
+I build AI systems, developer tools, and backend infrastructure —<br/>
+software that digs beneath the surface rather than sitting on top of it.
+
+<br/>
+
+<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust"/>
+<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB" alt="Python"/>
+<img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169E1" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ED" alt="Docker"/>
+
+<br/>
+
+<sub>
+<a href="#selected-work">selected work</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#technical-areas">areas</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#currently">now</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#contact">contact</a>
+</sub>
+
+</div>
 
 ---
 
 ## What I build
 
-My work sits at the intersection of three things: **code as data, systems that have to be correct, and measurement over assumption.**
+> Systems where **correctness is tested**, **performance is benchmarked**, and **claims ship with reproduction scripts**.
 
-- **Code intelligence** — static analysis, dependency graphs, AST-level usage tracing, historical signal mining
-- **Evaluation infrastructure for AI-generated code** — not demos, but harnesses that test whether model output is correct, efficient, and reproducible
-- **Backend systems with real constraints** — concurrent ingestion, crash recovery, reorg handling, bounded backpressure, Postgres-backed storage
+<table>
+<tr>
+<td width="33%" valign="top">
 
-I care about systems where correctness is tested, performance is benchmarked, and claims come with reproduction scripts — not the other way around.
+**Code intelligence**
+<br/><br/>
+<sub>static analysis · dependency graphs · AST-level usage tracing · git-history signal mining</sub>
+
+</td>
+<td width="33%" valign="top">
+
+**Eval infra for AI code**
+<br/><br/>
+<sub>sandboxed runners · efficiency scoring · bootstrap CIs · reproducible harnesses — not demos</sub>
+
+</td>
+<td width="33%" valign="top">
+
+**Backends with constraints**
+<br/><br/>
+<sub>concurrent ingestion · crash recovery · reorg handling · bounded backpressure · Postgres storage</sub>
+
+</td>
+</tr>
+</table>
+
+```
+code as data  +  systems that must be correct  +  measurement over assumption
+```
 
 ---
 
 ## Selected work
+<a id="selected-work"></a>
 
-### [ChainLens](https://github.com/VarunGore36/ChainLens-Results) — high-performance Ethereum indexer
+### `01` — [ChainLens](https://github.com/VarunGore36/ChainLens-Results) · high-performance Ethereum indexer
 
-A concurrent Ethereum mainnet indexer in Rust: ingests blocks, transactions, receipts, and logs from JSON-RPC, decodes them, persists to PostgreSQL, and serves them over a read API.
+A concurrent Ethereum mainnet indexer in **Rust + Tokio**: ingests blocks, transactions, receipts, and logs from JSON-RPC, decodes, persists to PostgreSQL, serves over a read API.
 
-Why it's interesting: most indexers assume correctness. This one tests it — reorg handling against a scriptable mock, crash recovery verified by killing the process mid-stream, and throughput measured across three isolated environments so cost is attributable, not claimed.
+> Most indexers assume correctness. This one tests it — reorg handling against a scriptable mock, crash recovery verified by killing the process mid-stream, throughput measured across three isolated environments so cost is attributable, not claimed.
 
-`Rust · Tokio · PostgreSQL · JSON-RPC · criterion`
+`rust` `tokio` `postgresql` `json-rpc` `criterion`
 
-Results, methodology, and live dashboard: **[ChainLens-Results](https://github.com/VarunGore36/ChainLens-Results)** → [varungore36.github.io/ChainLens-Results](https://varungore36.github.io/ChainLens-Results/)
+Results + methodology + live dashboard → **[ChainLens-Results](https://github.com/VarunGore36/ChainLens-Results)** · [varungore36.github.io/ChainLens-Results](https://varungore36.github.io/ChainLens-Results/)
 
 <details>
-<summary>Engineering notes</summary>
+<summary><sub>engineering notes</sub></summary>
 
 - Fan-out for I/O, single-writer funnel — RPC round-trips dominate by an order of magnitude
 - Cursor committed in the same transaction as data — recovery is a single `SELECT`
-- All channels bounded — backpressure is structural
-- 63 tests (56 unit + 7 integration), zero failures; decode benchmarks down to ~28ns for empty blocks, ~1.7M blocks/sec decode-only ceiling
+- Every channel bounded — backpressure is structural, not hoped for
+- `63 tests · 0 failures` — `~28ns` empty-block decode · `~1.7M blocks/sec` decode-only ceiling
+
+```
+JSON-RPC → Head Watcher → Scheduler → Workers → Sequencer → Committer → PostgreSQL
+                                     ↕ bounded channels (backpressure)
+```
 
 </details>
 
-### [DepLens](https://github.com/VarunGore36/DepLens) — can dependency impact be predicted?
+<br/>
 
-An investigation into whether dependency graphs, code usage, and historical evidence can predict the impact of a dependency update *before* it is applied. Explicitly framed as an open research question, not a solved problem.
+### `02` — [DepLens](https://github.com/VarunGore36/DepLens) · can dependency impact be predicted?
 
-Why it's interesting: the pipeline runs end-to-end against real repositories — spec parsing, transitive graph analysis, AST import-to-dependency linking, git-history update mining, heuristic + test-grounded labeling, baselines, and full evaluation (precision/recall, ROC-AUC, Brier, ablation, temporal splits). The README marks what is proven vs. what isn't, with a committed 42-case dataset and reproduction script.
+An investigation into whether dependency graphs, code usage, and historical evidence can predict the impact of a dependency update *before* it is applied. Framed explicitly as an open research question — not a solved problem.
 
-`Python · AST analysis · dependency graphs · git mining · evaluation harnesses · uv · ruff`
+> End-to-end pipeline against real repos: spec parsing → transitive graph → AST import linking → git-history mining → heuristic + test-grounded labeling → baselines → full evaluation. Every claim marked proven vs. unproven, with a committed 42-case dataset and reproduction script.
+
+`python` `ast-analysis` `dependency-graphs` `git-mining` `uv` `ruff`
 
 <details>
-<summary>Engineering notes</summary>
+<summary><sub>engineering notes</sub></summary>
 
 - Parses `requirements.txt`, `pyproject.toml` (incl. Poetry), `uv` / `Pipfile` locks
-- Tracks direct/transitive depth, dependents, centrality, snapshots
-- Labels history via reverts, fix-suspects, and isolated-venv test outcomes in git worktrees
-- 91 tests, `ruff check` clean, CI + GitHub workflow with PR comments
+- Tracks direct / transitive depth, dependents, centrality, snapshots
+- Labels via reverts, fix-suspects, and isolated-venv test outcomes in git worktrees
+- `91 tests · ruff clean · CI` + GitHub workflow with PR comments · `precision / recall / ROC-AUC / Brier / ablation / temporal splits`
 
 </details>
 
-### [ENAMEL-Extended](https://github.com/VarunGore36/ENAMEL-Extended) — do open-source code models write efficient code?
+<br/>
 
-Reimplementation and extension of [ENAMEL](https://arxiv.org/abs/2406.06647) (ICLR 2025), asking the same question for open-source models: passing tests is not the same as writing fast code.
+### `03` — [ENAMEL-Extended](https://github.com/VarunGore36/ENAMEL-Extended) · do open-source code models write efficient code?
 
-Why it's interesting: evaluated 13 open-source models across 161 problems with a sandboxed timing runner, censored scoring, bootstrap CIs, and q-distribution analysis. Finding: the best open-source model matches expert efficiency on only ~33% of problems, and bigger is not always better (CodeGen 6B beats 16B on efficiency).
+Reimplementation and extension of [ENAMEL](https://arxiv.org/abs/2406.06647) (ICLR 2025). Same question, new target: **open-source models**. Passing tests ≠ writing fast code.
 
-`Python · LLM evaluation · sandboxed execution · Docker · statistical analysis`
+> Evaluated 13 open-source models across 161 problems with a sandboxed timing runner, censored scoring, and q-distribution analysis. Best model matches expert efficiency on only ~33% of problems — and bigger isn't better (CodeGen 6B beats 16B on efficiency).
 
-Live results: [enamel-extended.vercel.app](https://enamel-extended.vercel.app) · 612 tests passing
+`python` `llm-eval` `sandboxed-execution` `docker` `statistics`
 
-### [CrukxCLI](https://github.com/VarunGore36/CrukxCLI) — a release gate for AI-written software
+Live results → [enamel-extended.vercel.app](https://enamel-extended.vercel.app) · `612 tests passing`
 
-`crukx gate` replays a recorded agent session against a regression contract and blocks the release when reliability, security, or latency constraints aren't met — deterministically, offline.
+<br/>
 
-Why it's interesting: instead of LLM-judging a single response, it replays the real recorded trajectory (shell commands, file writes, exit codes) `k` times and requires all `k` to pass (`pass^k`). Session logs are hash-chained, so a BLOCK can't be quietly rewritten into a PASS.
+### `04` — [CrukxCLI](https://github.com/VarunGore36/CrukxCLI) · a release gate for AI-written software
 
-`Rust · Ratatui · CLI design · replay-based verification · tamper-evident logs`
+`crukx gate` replays a recorded agent session against a regression contract — and blocks the release when reliability, security, or latency constraints fail. Deterministic, offline, no account required.
+
+> Instead of LLM-judging one response, it replays the real trajectory (commands, writes, exit codes) `k` times and requires all `k` to pass — `pass^k`. Logs are hash-chained, so a BLOCK can't be quietly rewritten into a PASS.
+
+`rust` `ratatui` `cli` `replay-verification` `tamper-evident-logs`
+
+```
+crukx run -- npm test   →   crukx capture   →   crukx gate   →   PASS / BLOCKED
+```
+
+---
+
+## Signal board
+
+```text
+ChainLens        63 tests · 0 failures · 3-env benchmarks · reorg + crash tested
+DepLens          91 tests · ruff clean · 42-case dataset · reproduce_v0.py committed
+ENAMEL-Extended  612 tests · 13 models · 161 problems · eff@1 vs pass@1 gap measured
+CrukxCLI         pass^k replay · hash-chained logs · VTR / P95 / security deltas
+```
+
+No stat cards. The numbers above trace to test suites and committed experiment outputs.
 
 ---
 
 ## Technical areas
+<a id="technical-areas"></a>
 
-**AI / ML**
-`LLM code-efficiency evaluation` · `sandboxed measurement` · `statistical scoring (eff@k, bootstrap CIs)` · `quant modeling background (GARCH, stat-arb, IV forecasting)`
+| Area | What I've actually used |
+| :--- | :--- |
+| **AI / ML** | LLM efficiency eval · sandboxed measurement · `eff@k`, bootstrap CIs · quant background (GARCH, stat-arb, IV forecasting) |
+| **Backend & Systems** | `Rust + Tokio` · concurrent pipelines · `PostgreSQL` · crash-safe recovery · reproducible benchmarking |
+| **Developer tooling** | AST analysis · dependency graphs · CLI design · CI workflows · replay / regression contracts |
+| **Full-stack & Infra** | `Python` · `TypeScript` · `Go` · `Docker / Compose` · static result dashboards |
 
-**Backend & Systems**
-`Rust + Tokio` · `concurrent pipelines` · `PostgreSQL` · `crash-safe recovery` · `reproducible benchmarking`
-
-**Developer tooling**
-`AST analysis` · `dependency graphs` · `CLI design` · `CI workflows` · `replay / regression contracts`
-
-**Full-stack & Infra**
-`Python` · `TypeScript` · `Go` · `Docker / Compose` · `static result dashboards`
-
-Only what's above shows up in my repositories. No padded skill lists.
+<sub>Only what's in my repos. No padded skill lists.</sub>
 
 ---
 
 ## Currently
+<a id="currently"></a>
 
-Recent work centers on **DepLens** (dependency-change impact) and **ChainLens** (indexer correctness + performance) — both active as of September 2026. The throughline: tooling that turns "does this code work?" into something measurable.
+> Recent work centers on **DepLens** (dependency-change impact) and **ChainLens** (indexer correctness + performance).
+
+```text
+$ git log --since="30 days" --oneline --author="VarunGore36"
+  … deplens: pipeline validation + v0 experiments
+  … chainlens: benchmarks + reorg / recovery hardening
+  … enamel-extended: open-model efficiency tables + site
+```
+
+Throughline: turning *"does this code work?"* into something measurable.
 
 ---
 
-## Contact
+<div align="center">
+<a id="contact"></a>
 
-Best place to reach me is here on GitHub:
+```
+— contact —
+```
 
 **[github.com/VarunGore36](https://github.com/VarunGore36)**
 
-If you've read this far and build interesting systems — particularly around code intelligence, eval infrastructure, or backend systems — I'm interested in the conversation.
+<sub>Building around code intelligence, eval infrastructure, or backend systems? I'm interested in the conversation.</sub>
+
+</div>

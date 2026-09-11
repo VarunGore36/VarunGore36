@@ -107,7 +107,7 @@ An investigation into whether dependency graphs, code usage, and historical evid
 <summary><sub>engineering notes</sub></summary>
 
 - Parses `requirements.txt`, `pyproject.toml` (incl. Poetry), `uv` / `Pipfile` locks
-<- Tracks direct / transitive depth, dependents, centrality, snapshots
+- Tracks direct / transitive depth, dependents, centrality, snapshots
 - Labels via reverts, fix-suspects, and isolated-venv test outcomes in git worktrees
 - `91 tests · ruff clean · CI` + GitHub workflow with PR comments · `precision / recall / ROC-AUC / Brier / ablation / temporal splits`
 

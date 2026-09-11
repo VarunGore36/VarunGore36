@@ -53,7 +53,7 @@ Why it's interesting: the pipeline runs end-to-end against real repositories —
 
 - Parses `requirements.txt`, `pyproject.toml` (incl. Poetry), `uv` / `Pipfile` locks
 - Tracks direct/transitive depth, dependents, centrality, snapshots
-- Labels history via reverts, fix-suspects, and isolated-venv test outcomes in git worktrees
+- Labels history via reverts, fix-suspects, and isolated - venv test outcomes in git worktrees
 - 91 tests, `ruff check` clean, CI + GitHub workflow with PR comments
 
 </details>

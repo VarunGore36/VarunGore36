@@ -118,12 +118,11 @@ Reimplementation of [ENAMEL](https://arxiv.org/abs/2406.06647) (ICLR 2025) for *
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=VarunGore36&show_icons=true&theme=dark&bg_color=0d1117&border_color=30363d&title_color=6e40c9&icon_color=3b82f6&text_color=c9d1d9&hide_border=true" alt="GitHub Stats" width="48%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VarunGore36&layout=compact&theme=dark&bg_color=0d1117&border_color=30363d&title_color=6e40c9&text_color=c9d1d9&hide_border=true" alt="Top Languages" width="40%"/>
+<img src="https://streak-stats.demolab.com?user=VarunGore36&theme=dark&background=0d1117&ring=6e40c9&fire=3b82f6&currStreakLabel=c9d1d9&sideLabels=8B949E&dates=484f5d" alt="Streak Stats" width="60%"/>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=VarunGore36&bg_color=0d1117&color=6e40c9&line=3b82f6&point=FFFFFF&area=true&area_color=6e40c9&hide_border=true" alt="Activity Graph" width="90%"/>
+<img src="https://ghchart.rshah.org/6e40c9/VarunGore36" alt="Contribution Chart" width="90%"/>
 
 </div>
 

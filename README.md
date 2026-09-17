@@ -1,8 +1,6 @@
 <div align="center">
 
-```
-mathematics → software engineering
-```
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=22&duration=3000&pause=1500&color=FFFFFF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=mathematics+%E2%86%92+software+engineering;code+as+data+%2B+correctness+%2B+measurement;building+systems+that+dig+beneath+the+surface" alt="typing animation"/>
 
 # Varun Gore
 
@@ -26,9 +24,27 @@ systems that dig beneath the surface rather than sitting on top of it.
 <a href="#selected-work">selected work</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#technical-areas">areas</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#currently">now</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#contact">contact</a>
 </sub>
 
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=VarunGore36&color=blueviolet&style=flat-square&label=profile+views" alt="profile views"/>
+
 </div>
 
----
+<img src="https://raw.githubusercontent.com/VarunGore36/VarunGore36/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" width="100%"/>
+
+<div align="center">
+<svg width="100%" height="3" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6e40c9" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#6e40c9" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.1"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="3" rx="1.5" fill="url(#g1)"/>
+</svg>
+</div>
 
 ## What I build
 
@@ -64,7 +80,19 @@ systems that dig beneath the surface rather than sitting on top of it.
 code as data  +  systems that must be correct  +  measurement over assumption
 ```
 
----
+<div align="center">
+<svg width="100%" height="3" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6e40c9" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#6e40c9" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.1"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="3" rx="1.5" fill="url(#g2)"/>
+</svg>
+</div>
 
 ## Selected work
 <a id="selected-work"></a>
@@ -140,7 +168,19 @@ Live results → [enamel-extended.vercel.app](https://enamel-extended.vercel.app
 crukx run -- npm test   →   crukx capture   →   crukx gate   →   PASS / BLOCKED
 ```
 
----
+<div align="center">
+<svg width="100%" height="3" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6e40c9" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#6e40c9" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.1"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="3" rx="1.5" fill="url(#g3)"/>
+</svg>
+</div>
 
 ## Signal board
 
@@ -153,7 +193,19 @@ CrukxCLI         pass^k replay · hash-chained logs · VTR / P95 / security delt
 
 No stat cards. The numbers above trace to test suites and committed experiment outputs.
 
----
+<div align="center">
+<svg width="100%" height="3" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6e40c9" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#6e40c9" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.1"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="3" rx="1.5" fill="url(#g4)"/>
+</svg>
+</div>
 
 ## Technical areas
 <a id="technical-areas"></a>
@@ -167,7 +219,19 @@ No stat cards. The numbers above trace to test suites and committed experiment o
 
 <sub>Only what's in my repos. No padded skill lists.</sub>
 
----
+<div align="center">
+<svg width="100%" height="3" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6e40c9" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#6e40c9" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.1"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="3" rx="1.5" fill="url(#g5)"/>
+</svg>
+</div>
 
 ## Currently
 <a id="currently"></a>
@@ -183,7 +247,19 @@ $ git log --since="30 days" --oneline --author="VarunGore36"
 
 Throughline: turning *"does this code work?"* into something measurable.
 
----
+<div align="center">
+<svg width="100%" height="3" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6e40c9" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#6e40c9" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.1"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="3" rx="1.5" fill="url(#g6)"/>
+</svg>
+</div>
 
 <div align="center">
 <a id="contact"></a>

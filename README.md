@@ -8,13 +8,14 @@ mathematics → software engineering
 
 *Mathematics by degree. Software engineer by trade.*
 
-I build AI systems, developer tools, and backend infrastructure —<br/>
-software that digs beneath the surface rather than sitting on top of it.
+I build production-oriented software around AI, developer infrastructure, and code intelligence —<br/>
+systems that dig beneath the surface rather than sitting on top of it.
 
 <br/>
 
 <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust"/>
 <img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB" alt="Python"/>
+<img src="https://img.shields.io/badge/Go-0d1117?style=flat-square&logo=go&logoColor=00ADD8" alt="Go"/>
 <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6" alt="TypeScript"/>
 <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169E1" alt="PostgreSQL"/>
 <img src="https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ED" alt="Docker"/>
@@ -68,7 +69,7 @@ code as data  +  systems that must be correct  +  measurement over assumption
 ## Selected work
 <a id="selected-work"></a>
 
-### `01` — [ChainLens](https://github.com/VarunGore36/ChainLens-Results) · high-performance Ethereum indexer
+### `01` — [ChainLens](https://github.com/VarunGore36/ChainLens) · high-performance Ethereum indexer
 
 A concurrent Ethereum mainnet indexer in **Rust + Tokio**: ingests blocks, transactions, receipts, and logs from JSON-RPC, decodes, persists to PostgreSQL, serves over a read API.
 
@@ -76,7 +77,7 @@ A concurrent Ethereum mainnet indexer in **Rust + Tokio**: ingests blocks, trans
 
 `rust` `tokio` `postgresql` `json-rpc` `criterion`
 
-Results + methodology + live dashboard → **[ChainLens-Results](https://github.com/VarunGore36/ChainLens-Results)** · [varungore36.github.io/ChainLens-Results](https://varungore36.github.io/ChainLens-Results/)
+Live site → [chain-lens-chi.vercel.app](https://chain-lens-chi.vercel.app/) · [ChainLens-Results](https://github.com/VarunGore36/ChainLens-Results)
 
 <details>
 <summary><sub>engineering notes</sub></summary>
@@ -84,7 +85,7 @@ Results + methodology + live dashboard → **[ChainLens-Results](https://github.
 - Fan-out for I/O, single-writer funnel — RPC round-trips dominate by an order of magnitude
 - Cursor committed in the same transaction as data — recovery is a single `SELECT`
 - Every channel bounded — backpressure is structural, not hoped for
-- `63 tests · 0 failures` — `~28ns` empty-block decode · `~1.7M blocks/sec` decode-only ceiling
+- `93 tests · 0 failures` — `~28ns` empty-block decode · `~1.7M blocks/sec` decode-only ceiling
 
 ```
 JSON-RPC → Head Watcher → Scheduler → Workers → Sequencer → Committer → PostgreSQL
@@ -144,7 +145,7 @@ crukx run -- npm test   →   crukx capture   →   crukx gate   →   PASS / BL
 ## Signal board
 
 ```text
-ChainLens        63 tests · 0 failures · 3-env benchmarks · reorg + crash tested
+ChainLens        93 tests · 0 failures · 3-env benchmarks · reorg + crash tested
 DepLens          91 tests · ruff clean · 42-case dataset · reproduce_v0.py committed
 ENAMEL-Extended  612 tests · 13 models · 161 problems · eff@1 vs pass@1 gap measured
 CrukxCLI         pass^k replay · hash-chained logs · VTR / P95 / security deltas
@@ -171,12 +172,12 @@ No stat cards. The numbers above trace to test suites and committed experiment o
 ## Currently
 <a id="currently"></a>
 
-> Recent work centers on **DepLens** (dependency-change impact) and **ChainLens** (indexer correctness + performance).
+> Active work centers on **ChainLens** (indexer correctness + performance) and exploring **blockchain infrastructure** (cosmos-sdk, artemis for Android automation).
 
 ```text
 $ git log --since="30 days" --oneline --author="VarunGore36"
+  … chainlens: 93 tests · reorg / recovery hardening · live site
   … deplens: pipeline validation + v0 experiments
-  … chainlens: benchmarks + reorg / recovery hardening
   … enamel-extended: open-model efficiency tables + site
 ```
 
@@ -191,7 +192,7 @@ Throughline: turning *"does this code work?"* into something measurable.
 — contact —
 ```
 
-**[github.com/VarunGore36](https://github.com/VarunGore36)**
+**[github.com/VarunGore36](https://github.com/VarunGore36)** · **[LinkedIn](https://www.linkedin.com/in/varun-gore-14187632a/)**
 
 <sub>Building around code intelligence, eval infrastructure, or backend systems? I'm interested in the conversation.</sub>
 

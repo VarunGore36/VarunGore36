@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="120" alt="pokeball"/>
+<img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="140" alt="pokeball"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&weight=400&size=22&pause=1000&color=FFDE00&background=1A1A2E00&center=true&vCenter=true&width=500&lines=VARUN+GORE" alt="name"/>
+<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&weight=400&size=22&pause=900&color=FFDE00&background=1A1A2E00&center=true&vCenter=true&width=520&lines=VARUN+GORE;LEVEL+99;VARUN+GORE" alt="name"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&pause=1800&color=8AC7DB&center=true&vCenter=true&width=560&lines=AI+%26+Systems+Design+Engineer;Backend+%2B+ML+enthusiast%2C+diving+deep+into+Web3;Specializes+in+correctness-tested%2C+benchmarked+code" alt="subtitle"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&pause=1500&speed=40&color=8AC7DB&center=true&vCenter=true&width=560&repeat=true&lines=AI+%26+Systems+Design+Engineer;Backend+%2B+ML+enthusiast%2C+diving+deep+into+Web3;Specializes+in+correctness-tested%2C+benchmarked+code;A+wild+PROJECT+appeared..." alt="subtitle"/>
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3B4CCA,100:FFDE00&height=110&section=header&text=&fontSize=0" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFDE00,50:3B4CCA,100:FFDE00&height=130&section=header&text=Gotta%20Ship%20'Em%20All&fontSize=32&fontColor=1A1A2E&fontAlignY=65&animation=twinkling" width="100%"/>
 
 </div>
 
@@ -21,7 +21,7 @@
 <table>
 <tr>
 <td align="center" width="140">
-<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png" width="110" alt="dragonite"/>
+<img src="https://play.pokemonshowdown.com/sprites/ani/dragonite.gif" width="110" alt="dragonite"/>
 <br/><sub><b>Signature type</b><br/>Systems / Infra</sub>
 </td>
 <td>
@@ -89,7 +89,7 @@ AI and systems design engineer with a backend core — into ML as more than a bu
 <tr>
 <td width="50%" valign="top">
 
-<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png" width="60"/>
+<img src="https://play.pokemonshowdown.com/sprites/ani/gyarados.gif" width="70"/>
 
 ### ChainLens
 **High-performance Ethereum indexer** · *Type: Water/Steel*
@@ -104,7 +104,7 @@ Concurrent mainnet indexer in **Rust + Tokio**. Ingests blocks, transactions, re
 </td>
 <td width="50%" valign="top">
 
-<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png" width="60"/>
+<img src="https://play.pokemonshowdown.com/sprites/ani/hypno.gif" width="70"/>
 
 ### DepLens
 **Dependency-change impact prediction** · *Type: Psychic*
@@ -120,7 +120,7 @@ Can dependency graphs + code usage + git history predict impact *before* an upda
 <tr>
 <td width="50%" valign="top">
 
-<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png" width="60"/>
+<img src="https://play.pokemonshowdown.com/sprites/ani/alakazam.gif" width="70"/>
 
 ### ENAMEL-Extended
 **LLM code efficiency evaluation** · *Type: Psychic/Electric*
@@ -135,7 +135,7 @@ Reimplementation of [ENAMEL](https://arxiv.org/abs/2406.06647) (ICLR 2025) for o
 </td>
 <td width="50%" valign="top">
 
-<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png" width="60"/>
+<img src="https://play.pokemonshowdown.com/sprites/ani/lucario.gif" width="70"/>
 
 ### CrukxCLI
 **Release gate for AI-written software** · *Type: Fighting/Steel*
@@ -165,13 +165,9 @@ Reimplementation of [ENAMEL](https://arxiv.org/abs/2406.06647) (ICLR 2025) for o
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VarunGore36&layout=compact&theme=radical&title_color=FFDE00&text_color=c9d1d9&bg_color=0d1117&border_color=3B4CCA" width="45%" alt="Top Langs"/>
 
-<br/><br/>
-
-<img src="https://ghchart.rshah.org/FFDE00/VarunGore36" alt="Contribution Chart" width="90%"/>
-
 </div>
 
-> **Note:** the snake-eating-contributions animation (popular on Pokémon-styled profiles) needs a small one-off GitHub Action in this repo to generate `github-contribution-grid-snake.svg` on a schedule — say the word and I'll write that workflow too.
+> **Want real motion here instead of static badges?** I can write a one-off GitHub Action that generates an animated "snake eats your contribution graph" SVG on a schedule — genuinely animated, not a typing-SVG trick. Say the word and I'll drop the workflow file in.
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=8,12,20&height=3" width="100%" alt=""/>
@@ -179,7 +175,7 @@ Reimplementation of [ENAMEL](https://arxiv.org/abs/2406.06647) (ICLR 2025) for o
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=14&pause=2200&color=8B949E&center=true&vCenter=true&width=460&lines=Gotta+ship+it+all.;building+systems+that+dig+beneath+the+surface." alt="footer"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=14&pause=2200&speed=35&color=8B949E&center=true&vCenter=true&width=460&repeat=true&lines=Gotta+ship+it+all.;building+systems+that+dig+beneath+the+surface.;...Varun+used+COMMIT.+It's+super+effective!" alt="footer"/>
 
 <br/>
 

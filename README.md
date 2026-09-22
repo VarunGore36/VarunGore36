@@ -8,7 +8,7 @@
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFDE00,50:3B4CCA,100:FFDE00&height=130&section=header&text=Gotta%20Ship%20'Em%20All&fontSize=32&fontColor=1A1A2E&fontAlignY=65&animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3B4CCA,100:6e40c9&height=130&section=header&text=Gotta%20Ship%20'Em%20All&fontSize=32&fontColor=FFDE00&fontAlignY=40&animation=twinkling" width="100%"/>
 
 </div>
 
@@ -169,8 +169,6 @@ Reimplementation of [ENAMEL](https://arxiv.org/abs/2406.06647) (ICLR 2025) for o
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VarunGore36&layout=compact&theme=radical&title_color=FFDE00&text_color=c9d1d9&bg_color=0d1117&border_color=3B4CCA" width="45%" alt="Top Langs"/>
 
 </div>
-
-> **Want real motion here instead of static badges?** I can write a one-off GitHub Action that generates an animated "snake eats your contribution graph" SVG on a schedule — genuinely animated, not a typing-SVG trick. Say the word and I'll drop the workflow file in.
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=8,12,20&height=3" width="100%" alt=""/>

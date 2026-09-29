@@ -1,150 +1,57 @@
 <div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=32&pause=1500&color=FFDE00&center=true&vCenter=true&width=500&lines=Varun+Gore" alt="name"/>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=2000&speed=35&color=8AC7DB&center=true&vCenter=true&width=600&repeat=true&lines=AI+%26+Systems+Design+Engineer;Backend+%2B+ML%2C+diving+deep+into+Web3;Correctness-tested%2C+benchmarked+code" alt="subtitle"/>
+  <img src="assets/banner.svg" alt="Varun Gore — infrastructure that proves its own claims" width="100%"/>
+</div>
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3B4CCA,100:6e40c9&height=120&section=header&fontColor=FFDE00" width="100%"/>
+I build infrastructure that has to prove its own claims: indexers, benchmarks, replay systems, and release gates where correctness is tested, performance is measured, and anything unproven is labelled as such.
 
-</div>
+| | |
+|---|---|
+| **Focus** | Systems engineering · AI evaluation · developer infrastructure |
+| **Primary stack** | Rust, Python |
+| **Work** | Freelance / contract via [Crukx-dev](https://github.com/Crukx-dev) · project work for IISER Bhopal |
+| **Based in** | Bhopal, India (IST) |
+| **Currently** | [AstralProject](https://github.com/VarunGore36/AstralProject): preparing a supervised 72-hour capture soak |
 
-## About
+---
 
-AI and systems design engineer with a backend core, into ML as more than a buzzword, and currently deep in web3/blockchain systems. I build things where **correctness is tested and performance is benchmarked — not asserted.**
+## Featured work
 
-Freelance/contract work under **[Crukx.dev](https://github.com/VarunGore36)**, including project work for **IISER Bhopal**.
+| Project | What it does | Evidence |
+|---|---|---|
+| [**AstralProject**](https://github.com/VarunGore36/AstralProject) · [site](https://astral-project-ruddy.vercel.app/) | Reproducible measurement layer for crypto markets: lossless, hash-verified market-data capture and order-book reconstruction. Research and simulation only. | Best bid/ask matched venue depth on 300/300 live checks · 26 hostile-payload parser tests · failures documented in the repo |
+| [**ChainLens**](https://github.com/VarunGore36/ChainLens) · [live](https://chain-lens-chi.vercel.app/) | Concurrent Ethereum mainnet indexer in Rust + Tokio. Ingests blocks, transactions, receipts and logs into PostgreSQL and serves a read API. Reorg-safe, crash-resumable. | 93 tests · 392 blocks/sec (pipeline benchmark) · 150 ns/block decode |
+| [**DepLens**](https://github.com/VarunGore36/DepLens) | Can dependency graphs, code usage and git history predict the impact of a change before it lands? End-to-end pipeline tested against real repos; every claim marked proven or unproven. | 91 tests · 42-case dataset · reproduction script |
+| [**ENAMEL-Extended**](https://github.com/VarunGore36/ENAMEL-Extended) · [live](https://enamel-extended.vercel.app) | Reimplementation of [ENAMEL](https://arxiv.org/abs/2406.06647) (ICLR 2025) for open-source models: passing tests isn't the same as writing fast code. | 13 models · 161 problems · 612 tests · eff@1 vs pass@1 gap measured |
+| [**CrukxCLI**](https://github.com/Crukx-dev/CrukxCLI) | `crukx gate` replays a recorded agent session *k* times and blocks the release if constraints fail. Deterministic, offline, no account. | pass^k replay · hash-chained, tamper-evident session logs |
 
-📍 Bhopal, India · 🔧 AI · Systems Design · Backend · Web3
+---
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=8,12,20&height=2" width="100%" alt=""/>
-</div>
+## Principles
 
-## Tech Stack
+- **Deterministic before fast.** Replaying the same input must give the same output.
+- **Measure before optimising.** Every optimisation ships with a benchmark.
+- **Failures are documented, not hidden.** Partial results and unverified claims stay in the README.
 
-**Languages**
-<br/>
-<img src="https://img.shields.io/badge/Rust-dea584?style=for-the-badge&logo=rust&logoColor=black"/>
-<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black"/>
-<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+---
 
-**Infrastructure**
-<br/>
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-<img src="https://img.shields.io/badge/Tokio-000000?style=for-the-badge&logo=rust&logoColor=white"/>
+## Stack
 
-**AI / ML**
-<br/>
-<img src="https://img.shields.io/badge/LLM_Evaluation-6e40c9?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Sandboxed_Benchmarking-A78BFA?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Machine_Learning-FF6B6B?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Rust-dea584?style=flat-square&logo=rust&logoColor=black"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Tokio-000000?style=flat-square&logo=rust&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
 
-**Web3**
-<br/>
-<img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white"/>
-<img src="https://img.shields.io/badge/EVM-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white"/>
-<img src="https://img.shields.io/badge/Blockchain_Indexing-8A2BE2?style=for-the-badge"/>
+Also: C, C++, Go, TypeScript, JavaScript, Solidity / EVM.
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=8,12,20&height=2" width="100%" alt=""/>
-</div>
-
-## Featured Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🔗 ChainLens
-**High-performance Ethereum indexer**
-
-Concurrent mainnet indexer in Rust + Tokio. Ingests blocks, transactions, receipts, and logs, decodes and persists to PostgreSQL, and serves a read API. Reorg-safe, crash-resumable.
-
-`93 tests` · `392 blocks/sec` · `150ns/block decode`
-
-[![Repo](https://img.shields.io/badge/Repo-181717?style=flat-square&logo=github)](https://github.com/VarunGore36/ChainLens)
-[![Live](https://img.shields.io/badge/Live-22c55e?style=flat-square)](https://chain-lens-chi.vercel.app/)
-
-</td>
-<td width="50%" valign="top">
-
-### 🧠 DepLens
-**Dependency-change impact prediction**
-
-Can dependency graphs, code usage, and git history predict a change's impact before it lands? An end-to-end pipeline tested against real repos, with every claim marked proven vs. unproven.
-
-`91 tests` · `42-case dataset` · `repro script included`
-
-[![Repo](https://img.shields.io/badge/Repo-181717?style=flat-square&logo=github)](https://github.com/VarunGore36/DepLens)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### ⚡ ENAMEL-Extended
-**LLM code efficiency evaluation**
-
-Reimplementation of [ENAMEL](https://arxiv.org/abs/2406.06647) (ICLR 2025) for open-source models, because passing tests isn't the same as writing fast code.
-
-`13 models` · `161 problems` · `612 tests`
-
-[![Repo](https://img.shields.io/badge/Repo-181717?style=flat-square&logo=github)](https://github.com/VarunGore36/ENAMEL-Extended)
-[![Live](https://img.shields.io/badge/Live-22c55e?style=flat-square)](https://enamel-extended.vercel.app)
-
-</td>
-<td width="50%" valign="top">
-
-### 🛡️ CrukxCLI
-**Release gate for AI-written software**
-
-`crukx gate` replays an agent session *k* times and blocks release when constraints fail — deterministic, offline, tamper-evident logs.
-
-`pass^k replay` · `hash-chained logs`
-
-[![Repo](https://img.shields.io/badge/Repo-181717?style=flat-square&logo=github)](https://github.com/VarunGore36/CrukxCLI)
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=8,12,20&height=2" width="100%" alt=""/>
-</div>
-
-## GitHub Activity
+---
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=VarunGore36&show_icons=true&theme=radical&title_color=FFDE00&icon_color=3B4CCA&text_color=c9d1d9&bg_color=0d1117&border_color=3B4CCA" width="48%" alt="GitHub Stats"/>
-<img src="https://streak-stats.demolab.com?user=VarunGore36&theme=radical&ring=FFDE00&fire=FF0000&currStreakLabel=FFDE00&background=0d1117&border=3B4CCA" width="48%" alt="Streak Stats"/>
-
-<br/><br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VarunGore36&layout=compact&theme=radical&title_color=FFDE00&text_color=c9d1d9&bg_color=0d1117&border_color=3B4CCA" width="45%" alt="Top Langs"/>
-
-</div>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=8,12,20&height=2" width="100%" alt=""/>
-</div>
-
-<div align="center">
-
-<sub>Gotta ship 'em all.</sub>
-
-<br/><br/>
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VarunGore36)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/varun-gore-14187632a/)
-<img src="https://komarev.com/ghpvc/?username=VarunGore36&color=FFDE00&style=for-the-badge&label=profile+views"/>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/varun-gore-14187632a/)
+[![Crukx-dev](https://img.shields.io/badge/Crukx--dev-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Crukx-dev)
 
 </div>

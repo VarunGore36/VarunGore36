@@ -20,22 +20,18 @@
 
 ```mermaid
 flowchart TB
-    subgraph DATA["Data systems"]
-        A[AstralProject<br/>market data]
-        B[ChainLens<br/>chain data]
+    subgraph data["Data systems"]
+        a1["AstralProject - market data"]
+        a2["ChainLens - chain data"]
     end
-    subgraph EVAL["Evaluation"]
-        C[DepLens<br/>change impact]
-        D[ENAMEL-Extended<br/>code efficiency]
+    subgraph eval["Evaluation"]
+        b1["DepLens - change impact"]
+        b2["ENAMEL-Extended - code efficiency"]
     end
-    subgraph REL["Release safety"]
-        E[CrukxCLI<br/>replay gates]
+    subgraph rel["Release safety"]
+        c1["CrukxCLI - replay gates"]
     end
-    S[deterministic · measured · failures documented]
-    style S fill:#0f1626,stroke:#5eead4,color:#8ac7db
-    style DATA fill:transparent,stroke:#2a3350,color:#6b7488
-    style EVAL fill:transparent,stroke:#2a3350,color:#6b7488
-    style REL fill:transparent,stroke:#2a3350,color:#6b7488
+    s["deterministic - measured - failures documented"]
 ```
 
 ---
@@ -53,10 +49,10 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    WS[Exchange WebSocket] --> FR[raw frames]
-    FR --> CH[compressed chunks + SHA-256]
-    CH --> BK[order-book reconstruct]
-    BK --> AU[offline audit]
+    ws["Exchange WebSocket"] --> fr["raw frames"]
+    fr --> ch["compressed chunks plus SHA-256"]
+    ch --> bk["order-book reconstruct"]
+    bk --> au["offline audit"]
 ```
 
 ---
@@ -72,11 +68,11 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    RPC[Ethereum RPC] --> W[workers]
-    W --> S[sequencer]
-    S --> C[committer]
-    C --> PG[(PostgreSQL)]
-    PG --> API[read API + WS]
+    rpc["Ethereum RPC"] --> w["workers"]
+    w --> sq["sequencer"]
+    sq --> cm["committer"]
+    cm --> pg[("PostgreSQL")]
+    pg --> api["read API plus WS"]
 ```
 
 ---
@@ -91,11 +87,11 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    R[repo + specs] --> G[dependency graph]
-    R --> U[usage tracing]
-    G --> P[impact estimate]
-    U --> P
-    P --> E[evaluation]
+    r["repo plus specs"] --> g["dependency graph"]
+    r --> u["usage tracing"]
+    g --> p["impact estimate"]
+    u --> p
+    p --> e["evaluation"]
 ```
 
 ---
@@ -112,9 +108,9 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    Q[problems + samples] --> M[sandboxed measure]
-    M --> S[eff@1 scoring]
-    S --> R[report + CIs]
+    q["problems plus samples"] --> m["sandboxed measure"]
+    m --> sc["eff-at-1 scoring"]
+    sc --> rp["report plus CIs"]
 ```
 
 ---
@@ -129,10 +125,10 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    S[recorded session] --> R[replay k times]
-    R --> G{constraints hold?}
-    G -->|yes| OK[release]
-    G -->|no| BL[block]
+    s1["recorded session"] --> r1["replay k times"]
+    r1 --> gt{"constraints hold"}
+    gt -->|"yes"| ok["release"]
+    gt -->|"no"| bl["block"]
 ```
 
 ---
@@ -141,10 +137,10 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    I[same input] --> R[replay]
-    R --> M[measure with benchmark]
-    M --> D[document failures]
-    D --> SH[ship or mark unproven]
+    i["same input"] --> rp2["replay"]
+    rp2 --> ms["measure with benchmark"]
+    ms --> dc["document failures"]
+    dc --> sh["ship or mark unproven"]
 ```
 
 1. **Deterministic before fast** — same input, same output, every replay.
@@ -155,16 +151,13 @@ flowchart TD
 
 ## Stack
 
-**Core:** Rust · Python · Tokio · PostgreSQL
-<br/>**Infra:** Docker · Linux
-<br/>**Also:** C, C++, Go, TypeScript, JavaScript, Solidity / EVM
+<!-- All icons below are served via GitHub Camo -->
 
-<!-- Stack icons served via GitHub Camo -->
-<p>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=rust,py,postgres,docker,linux,go,ts,js,solidity,c,cpp&theme=dark" alt="Rust, Python, PostgreSQL, Docker, Linux, Go, TypeScript, JavaScript, Solidity, C, C++"/>
-  </a>
-</p>
+| | |
+|---|---|
+| Core | <img src="https://skillicons.dev/icons?i=rust,py,postgres&theme=dark" alt="Core stack icons"/> <img src="https://img.shields.io/badge/Tokio-000000?style=flat-square&logo=rust&logoColor=white" alt="Tokio"/> |
+| Infra | <img src="https://skillicons.dev/icons?i=docker,linux&theme=dark" alt="Infra stack icons"/> |
+| Also | <img src="https://skillicons.dev/icons?i=c,cpp,go,ts,js,solidity&theme=dark" alt="Also stack icons"/> |
 
 ---
 

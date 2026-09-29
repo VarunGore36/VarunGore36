@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.svg" alt="Varun Gore — infrastructure that proves its own claims" width="100%"/>
+  <img src="banner.svg" alt="Varun Gore — infrastructure that proves its own claims" width="100%"/>
 </div>
 
 <br/>

@@ -14,19 +14,28 @@
 
 ---
 
-## How the pieces fit
+## Independent projects, shared standard
+
+> Each project below is standalone — no shared runtime, no pipeline between them. What they share is how they're built.
 
 ```mermaid
-flowchart LR
-    A[AstralProject<br/>capture market data] --> B[ChainLens<br/>index chain data]
-    B --> C[DepLens<br/>predict change impact]
-    D[ENAMEL-Extended<br/>measure code efficiency] --> E[CrukxCLI<br/>gate releases]
-    C --> E
-    style A fill:#0f1626,stroke:#5eead4,color:#e6edf3
-    style B fill:#0f1626,stroke:#5eead4,color:#e6edf3
-    style C fill:#0f1626,stroke:#5eead4,color:#e6edf3
-    style D fill:#0f1626,stroke:#8b5cf6,color:#e6edf3
-    style E fill:#0f1626,stroke:#8b5cf6,color:#e6edf3
+flowchart TB
+    subgraph DATA["Data systems"]
+        A[AstralProject<br/>market data]
+        B[ChainLens<br/>chain data]
+    end
+    subgraph EVAL["Evaluation"]
+        C[DepLens<br/>change impact]
+        D[ENAMEL-Extended<br/>code efficiency]
+    end
+    subgraph REL["Release safety"]
+        E[CrukxCLI<br/>replay gates]
+    end
+    S[deterministic · measured · failures documented]
+    style S fill:#0f1626,stroke:#5eead4,color:#8ac7db
+    style DATA fill:transparent,stroke:#2a3350,color:#6b7488
+    style EVAL fill:transparent,stroke:#2a3350,color:#6b7488
+    style REL fill:transparent,stroke:#2a3350,color:#6b7488
 ```
 
 ---

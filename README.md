@@ -172,12 +172,7 @@ Incomplete work, uncertain conclusions, and known failure modes are part of the 
 
 <br />
 
-```text
-STACK / Rust · Python · TypeScript · SQL
-SYSTEMS / Tokio · Axum · SQLx · PostgreSQL · Docker · Linux
-RELIABILITY / pytest · Ruff · GitHub Actions · Prometheus · Grafana
-AI / vLLM · EvalPlus · NumPy · Matplotlib
-```
+<img src="assets/techstack.svg" alt="Technology stack: Rust, Python, TypeScript, SQL, Linux, Tokio, Axum, SQLx, Alloy, vLLM, EvalPlus, PostgreSQL, Docker, GitHub Actions, Prometheus, Grafana, pytest, Ruff, uv, NumPy, and Matplotlib" width="100%" />
 
 <br />
 

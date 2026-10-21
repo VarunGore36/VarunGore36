@@ -1,0 +1,38 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Varun Gore's technology stack</title>
+  <desc id="desc">An animated visual technology map covering systems languages, Rust runtime tools, AI evaluation, data observability, and developer delivery tools.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#091022"/><stop offset=".55" stop-color="#10193A"/><stop offset="1" stop-color="#150C27"/></linearGradient>
+    <linearGradient id="edge" x1="60" y1="0" x2="1140" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#00E5B0"/><stop offset=".5" stop-color="#74A7FF"/><stop offset="1" stop-color="#D789FF"/></linearGradient>
+    <linearGradient id="rust" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFB36B"/><stop offset="1" stop-color="#E7583B"/></linearGradient>
+    <linearGradient id="python" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6DB8FF"/><stop offset="1" stop-color="#FFE06C"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#61D6FF"/><stop offset="1" stop-color="#657BFF"/></linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3BF5C2"/><stop offset="1" stop-color="#15AA9B"/></linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E19BFF"/><stop offset="1" stop-color="#8D5DF4"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8"/></filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" stroke="#D6E1FF" stroke-opacity=".04"/></pattern>
+  </defs>
+  <style>
+    @keyframes route { to { stroke-dashoffset: -120; } }
+    @keyframes ping { 0%,100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.35); opacity: .62; } }
+    @keyframes shimmer { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+    .route { stroke-dasharray: 8 8; animation: route 4s linear infinite; } .pulse { transform-box: fill-box; transform-origin: center; animation: ping 2.3s ease-in-out infinite; } .late { animation-delay: 1.15s; } .shimmer { animation: shimmer 3s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) { .route,.pulse,.shimmer { animation: none; } }
+  </style>
+  <rect width="1200" height="620" rx="20" fill="url(#bg)"/><rect width="1200" height="620" rx="20" fill="url(#grid)"/>
+  <text x="58" y="62" fill="#91A4D0" font-family="ui-monospace,monospace" font-size="12" letter-spacing="3">03 / SYSTEM MAP</text><text x="58" y="105" fill="#F0F4FF" font-family="ui-monospace,monospace" font-size="32" font-weight="700">TECH STACK</text><text x="1140" y="100" fill="#91A4D0" font-family="ui-monospace,monospace" font-size="12" letter-spacing="1.5" text-anchor="end">TOOLS I REACH FOR</text>
+  <path d="M58 127H1142" stroke="#9EB2E5" stroke-opacity=".16"/><path d="M58 127H248" stroke="url(#edge)" stroke-width="3"/>
+  <g stroke="#8EA4DC" stroke-opacity=".2" stroke-width="1.3" class="route"><path d="M310 243H426"/><path d="M774 243H890"/><path d="M310 443H426"/><path d="M774 443H890"/><path d="M600 306V390"/></g>
+  <g font-family="ui-monospace,monospace">
+    <rect x="426" y="222" width="348" height="106" rx="14" fill="#101A38" stroke="#95ABE0" stroke-opacity=".3"/>
+    <text x="600" y="252" fill="#00E5B0" font-size="11" letter-spacing="2" text-anchor="middle">CORE</text><text x="600" y="284" fill="#F4F7FF" font-size="20" font-weight="700" text-anchor="middle">SYSTEMS &amp; LANGUAGE</text><text x="600" y="309" fill="#B3C2E5" font-size="13" text-anchor="middle">Rust · Python · TypeScript · SQL · Linux</text>
+    <rect x="58" y="164" width="252" height="158" rx="14" fill="#0D1733" stroke="#FFB36B" stroke-opacity=".35"/><rect x="78" y="184" width="8" height="8" rx="2" fill="url(#rust)"/><text x="100" y="192" fill="#FFCAA3" font-size="11" letter-spacing="1.8">RUST RUNTIME</text><text x="78" y="224" fill="#F3F6FF" font-size="18" font-weight="700">Performance, by proof</text><text x="78" y="251" fill="#B7C6E8" font-size="12">Tokio · Axum · SQLx · Alloy</text><text x="78" y="273" fill="#B7C6E8" font-size="12">Tungstenite · rustls · zstd</text><text x="78" y="295" fill="#B7C6E8" font-size="12">criterion</text>
+    <rect x="890" y="164" width="252" height="158" rx="14" fill="#0D1733" stroke="#6DB8FF" stroke-opacity=".35"/><rect x="910" y="184" width="8" height="8" rx="2" fill="url(#python)"/><text x="932" y="192" fill="#B5D8FF" font-size="11" letter-spacing="1.8">AI &amp; EVALUATION</text><text x="910" y="224" fill="#F3F6FF" font-size="18" font-weight="700">Measure the model</text><text x="910" y="251" fill="#B7C6E8" font-size="12">vLLM · EvalPlus · MCP</text><text x="910" y="273" fill="#B7C6E8" font-size="12">NumPy · Matplotlib</text><text x="910" y="295" fill="#B7C6E8" font-size="12">agent tooling</text>
+    <rect x="58" y="364" width="252" height="158" rx="14" fill="#0D1733" stroke="#3BF5C2" stroke-opacity=".35"/><rect x="78" y="384" width="8" height="8" rx="2" fill="url(#mint)"/><text x="100" y="392" fill="#8BFFE0" font-size="11" letter-spacing="1.8">DATA &amp; OBSERVABILITY</text><text x="78" y="424" fill="#F3F6FF" font-size="18" font-weight="700">See the system</text><text x="78" y="451" fill="#B7C6E8" font-size="12">PostgreSQL · Prometheus</text><text x="78" y="473" fill="#B7C6E8" font-size="12">Grafana · market data</text><text x="78" y="495" fill="#B7C6E8" font-size="12">replay &amp; indexing</text>
+    <rect x="890" y="364" width="252" height="158" rx="14" fill="#0D1733" stroke="#D789FF" stroke-opacity=".35"/><rect x="910" y="384" width="8" height="8" rx="2" fill="url(#violet)"/><text x="932" y="392" fill="#E6B8FF" font-size="11" letter-spacing="1.8">DELIVERY &amp; QUALITY</text><text x="910" y="424" fill="#F3F6FF" font-size="18" font-weight="700">Ship with guardrails</text><text x="910" y="451" fill="#B7C6E8" font-size="12">Docker · GitHub Actions</text><text x="910" y="473" fill="#B7C6E8" font-size="12">pytest · Ruff · uv</text><text x="910" y="495" fill="#B7C6E8" font-size="12">benchmarks · CI</text>
+    <rect x="426" y="390" width="348" height="106" rx="14" fill="#101A38" stroke="#95ABE0" stroke-opacity=".3"/><text x="600" y="420" fill="#74A7FF" font-size="11" letter-spacing="2" text-anchor="middle">ENGINEERING THROUGH-LINE</text><text x="600" y="452" fill="#F4F7FF" font-size="19" font-weight="700" text-anchor="middle">DETERMINISTIC · AUDITABLE · FAST</text><text x="600" y="477" fill="#B3C2E5" font-size="13" text-anchor="middle">systems that can explain themselves</text>
+  </g>
+  <g filter="url(#glow)"><circle class="pulse" cx="310" cy="243" r="5" fill="#FF9C62"/><circle class="pulse late" cx="890" cy="243" r="5" fill="#69BFFF"/><circle class="pulse late" cx="310" cy="443" r="5" fill="#2AF0BB"/><circle class="pulse" cx="890" cy="443" r="5" fill="#D789FF"/></g>
+  <g><circle class="pulse" cx="310" cy="243" r="3" fill="#FFD0A9"/><circle class="pulse late" cx="890" cy="243" r="3" fill="#BDE3FF"/><circle class="pulse late" cx="310" cy="443" r="3" fill="#B5FFE9"/><circle class="pulse" cx="890" cy="443" r="3" fill="#F0C8FF"/></g>
+  <text class="shimmer" x="600" y="575" fill="#8FA3D0" font-family="ui-monospace,monospace" font-size="11" letter-spacing="2" text-anchor="middle">EXPAND THE MAP AS THE WORK EXPANDS</text><rect x=".5" y=".5" width="1199" height="619" rx="19.5" stroke="#C0CEFF" stroke-opacity=".14"/>
+</svg>

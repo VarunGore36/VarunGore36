@@ -12,6 +12,8 @@
 
 > I build infrastructure that does more than work—it can account for itself. My interests sit at the intersection of systems engineering, agent security, reproducible measurement, and developer tooling.
 
+<img src="assets/signal.svg" alt="Live signal" width="100%" />
+
 <table>
 <tr>
 <td width="33%" valign="top">

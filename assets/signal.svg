@@ -1,0 +1,12 @@
+<svg width="1200" height="56" viewBox="0 0 1200 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Live signal divider">
+  <defs><linearGradient id="signal-gradient" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#00E5B0" stop-opacity="0"/><stop offset=".32" stop-color="#00E5B0"/><stop offset=".62" stop-color="#74A7FF"/><stop offset="1" stop-color="#D789FF" stop-opacity="0"/></linearGradient></defs>
+  <style>
+    @keyframes sweep { from { transform: translateX(-360px); } to { transform: translateX(1200px); } }
+    @keyframes flicker { 0%,100% { opacity: .25; } 50% { opacity: .95; } }
+    .sweep { animation: sweep 4.8s linear infinite; } .light { animation: flicker 2.2s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) { .sweep,.light { animation: none; } }
+  </style>
+  <rect width="1200" height="56" rx="9" fill="#0B1125"/><path d="M0 28H1200" stroke="#94A9DB" stroke-opacity=".14"/>
+  <g class="sweep"><path d="M0 28H360" stroke="url(#signal-gradient)" stroke-width="2"/><circle class="light" cx="280" cy="28" r="4" fill="#74A7FF"/></g>
+  <g fill="#8FA4D4" font-family="ui-monospace,monospace" font-size="10" letter-spacing="2"><text x="0" y="16">LIVE SIGNAL</text><text x="1200" y="16" text-anchor="end">SYSTEMS / SECURITY / RESEARCH</text></g>
+</svg>

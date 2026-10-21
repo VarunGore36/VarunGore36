@@ -1,5 +1,12 @@
 <svg width="1200" height="170" viewBox="0 0 1200 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Build systems. Leave evidence.">
   <defs><linearGradient id="b" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#00E5B0"/><stop offset=".48" stop-color="#74A7FF"/><stop offset="1" stop-color="#D789FF"/></linearGradient></defs>
+  <style>
+    @keyframes beacon { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .45; transform: scale(1.7); } }
+    @keyframes trace { to { stroke-dashoffset: -120; } }
+    .beacon { transform-box: fill-box; transform-origin: center; animation: beacon 1.8s ease-in-out infinite; }
+    .trace { stroke-dasharray: 16 10; animation: trace 4s linear infinite; }
+    @media (prefers-reduced-motion: reduce) { .beacon,.trace { animation: none; } }
+  </style>
   <rect width="1200" height="170" rx="18" fill="#0B1125"/><path d="M0 1H1200" stroke="url(#b)" stroke-width="2"/><path d="M760 0L920 170M850 0L1010 170M940 0L1100 170M1030 0L1190 170" stroke="#B7C7F8" stroke-opacity=".06"/>
-  <circle cx="70" cy="84" r="6" fill="#00E5B0"/><path d="M88 84H157" stroke="#00E5B0" stroke-opacity=".5"/><text x="190" y="75" fill="#EFF4FF" font-family="ui-monospace,monospace" font-size="23" font-weight="700" letter-spacing=".5">BUILD SYSTEMS. LEAVE EVIDENCE.</text><text x="192" y="106" fill="#91A3CF" font-family="ui-monospace,monospace" font-size="13">systems · security · agent infrastructure</text><text x="1120" y="88" fill="#91A3CF" font-family="ui-monospace,monospace" font-size="13" text-anchor="end">VG / 2026</text>
+  <circle class="beacon" cx="70" cy="84" r="6" fill="#00E5B0"/><path class="trace" d="M88 84H157" stroke="#00E5B0" stroke-opacity=".5"/><text x="190" y="75" fill="#EFF4FF" font-family="ui-monospace,monospace" font-size="23" font-weight="700" letter-spacing=".5">BUILD SYSTEMS. LEAVE EVIDENCE.</text><text x="192" y="106" fill="#91A3CF" font-family="ui-monospace,monospace" font-size="13">systems · security · agent infrastructure</text><text x="1120" y="88" fill="#91A3CF" font-family="ui-monospace,monospace" font-size="13" text-anchor="end">VG / 2026</text>
 </svg>

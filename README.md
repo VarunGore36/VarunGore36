@@ -10,7 +10,7 @@
 
 <img src="assets/terminal.svg" alt="Terminal output. whoami: varun gore, AI and systems design engineer. stack: rust, python, postgresql, linux. location: bhopal, india (IST). principle: anything unproven stays labelled as unproven." width="100%">
 
-I build infrastructure that has to prove its own claims: indexers, benchmarks, replay systems and release gates, where correctness is tested, performance is measured, and anything unproven is labelled as such.
+I build infrastructure that has to prove its own claims: secure agent runtimes, indexers, benchmarks, replay systems and release gates—where correctness is tested, performance is measured, and anything unproven is labelled as such.
 
 <br>
 
@@ -35,6 +35,21 @@ I build infrastructure that has to prove its own claims: indexers, benchmarks, r
 <br>
 
 <img src="assets/h-built.svg" alt="What I've built" width="100%">
+
+<table>
+<tr>
+<td align="left" valign="top">
+<h3><a href="https://github.com/VarunGore36/toolcage">Toolcage</a> <sub>— agent actions with enforceable boundaries</sub></h3>
+<sub>A local-first Rust runtime that puts policy, credential brokering, controlled egress and tamper-evident audit logs between an AI agent and everything it touches. It is deliberately fail-closed: when isolation, policy or evidence cannot be established, the action is denied.</sub>
+<br><br>
+<sub><code>72 passing tests</code>&nbsp;&nbsp;<code>404 ns policy p99</code>&nbsp;&nbsp;<code>Linux · Rust · MCP</code>&nbsp;&nbsp;<code>alpha · not independently reviewed</code></sub>
+<br><br>
+<sub><a href="https://github.com/VarunGore36/toolcage">repo</a> · <a href="https://github.com/VarunGore36/toolcage/blob/main/docs/THREAT_MODEL.md">threat model</a> · <a href="https://github.com/VarunGore36/toolcage/blob/main/docs/REVIEW.md">review status</a></sub>
+</td>
+</tr>
+</table>
+
+<br>
 
 <table>
 <tr>

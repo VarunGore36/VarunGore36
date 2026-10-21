@@ -1,0 +1,27 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">A system is only as trustworthy as its failure mode</title>
+  <desc id="desc">An animated cinematic title card with a moving horizon and atmospheric lights.</desc>
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse"><stop stop-color="#070A14"/><stop offset=".55" stop-color="#111531"/><stop offset="1" stop-color="#120A20"/></linearGradient>
+    <linearGradient id="horizon" x1="260" y1="0" x2="957" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#00E5B0" stop-opacity="0"/><stop offset=".22" stop-color="#00E5B0"/><stop offset=".56" stop-color="#75A8FF"/><stop offset=".82" stop-color="#D789FF"/><stop offset="1" stop-color="#D789FF" stop-opacity="0"/></linearGradient>
+    <radialGradient id="moon" cx="0" cy="0" r="1" gradientTransform="translate(948 74) rotate(135) scale(124)" gradientUnits="userSpaceOnUse"><stop stop-color="#D6C1FF" stop-opacity=".8"/><stop offset=".32" stop-color="#986DFF" stop-opacity=".22"/><stop offset="1" stop-color="#986DFF" stop-opacity="0"/></radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+    <pattern id="grain" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".6" fill="#DCE8FF" fill-opacity=".12"/></pattern>
+  </defs>
+  <style>
+    @keyframes skyline { 0%,100% { transform: translateX(0); } 50% { transform: translateX(-42px); } }
+    @keyframes horizon-travel { from { stroke-dashoffset: 210; } to { stroke-dashoffset: 0; } }
+    @keyframes moon-breathe { 0%,100% { opacity: .55; transform: scale(1); } 50% { opacity: 1; transform: scale(1.12); } }
+    @keyframes grain-shift { from { transform: translate(0,0); } to { transform: translate(9px,9px); } }
+    .skyline { animation: skyline 12s ease-in-out infinite; } .travel { stroke-dasharray: 100 110; animation: horizon-travel 3.8s linear infinite; }
+    .moon { transform-box: fill-box; transform-origin: center; animation: moon-breathe 5s ease-in-out infinite; } .grain { animation: grain-shift .65s steps(2) infinite; }
+    @media (prefers-reduced-motion: reduce) { .skyline,.travel,.moon,.grain { animation: none; } }
+  </style>
+  <rect width="1200" height="260" rx="18" fill="url(#night)"/>
+  <g class="moon"><circle cx="948" cy="74" r="93" fill="url(#moon)"/><circle cx="948" cy="74" r="23" fill="#DCCBFF" fill-opacity=".78"/></g>
+  <path class="skyline" d="M-20 228L106 202L186 218L298 178L418 207L527 158L633 203L740 144L859 199L985 169L1118 208L1220 176V270H-20V228Z" fill="#080B17"/>
+  <path class="skyline" d="M-40 240L92 220L250 232L382 204L500 234L650 190L793 226L920 181L1050 225L1230 194V270H-40V240Z" fill="#0D1228" fill-opacity=".95"/>
+  <path d="M0 214H1200" stroke="#A7B9E7" stroke-opacity=".16"/><path class="travel" d="M0 214H1200" stroke="url(#horizon)" stroke-width="2"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"><text x="74" y="76" fill="#93A5D1" font-size="12" letter-spacing="3">DIRECTOR'S NOTE / 2026</text><text x="74" y="129" fill="#F1F4FF" font-size="29" font-weight="700" letter-spacing="-.5">A SYSTEM IS ONLY AS TRUSTWORTHY</text><text x="74" y="165" fill="#F1F4FF" font-size="29" font-weight="700" letter-spacing="-.5">AS ITS FAILURE MODE.</text><text x="74" y="194" fill="#A9B9DC" font-size="13">design for the moment certainty runs out.</text></g>
+  <rect class="grain" width="1200" height="260" rx="18" fill="url(#grain)" opacity=".32"/><rect x=".5" y=".5" width="1199" height="259" rx="17.5" stroke="#BFCCFF" stroke-opacity=".13"/>
+</svg>

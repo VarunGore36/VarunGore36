@@ -4,7 +4,7 @@
 
 <br />
 
-<a href="https://www.linkedin.com/in/varun-gore-14187632a/">LinkedIn</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="mailto:varungore1@gmail.com">Email</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/VarunGore36">GitHub</a>&nbsp;&nbsp;·&nbsp;&nbsp;<code>@geronimo.stilton36</code>
+<a href="https://www.linkedin.com/in/varun-gore-14187632a/">LinkedIn</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="mailto:varungore1@gmail.com">Email</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/VarunGore36">GitHub</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://discord.com/users/1279066758300569623">Discord</a>
 
 </div>
 
@@ -129,6 +129,10 @@ An open reimplementation and extension of the ENAMEL benchmark for LLM-generated
 
 <br /><br />
 
+<img src="assets/reel.svg" alt="A system is only as trustworthy as its failure mode" width="100%" />
+
+<br /><br />
+
 <img src="assets/h-principles.svg" alt="How I build" width="100%" />
 
 <table>
@@ -174,6 +178,10 @@ SYSTEMS / Tokio · Axum · SQLx · PostgreSQL · Docker · Linux
 RELIABILITY / pytest · Ruff · GitHub Actions · Prometheus · Grafana
 AI / vLLM · EvalPlus · NumPy · Matplotlib
 ```
+
+<br />
+
+<a href="https://discord.com/users/1279066758300569623"><img src="assets/contact.svg" alt="Find Varun Gore on Discord" width="100%" /></a>
 
 <br />
 

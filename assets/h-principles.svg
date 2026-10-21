@@ -1,7 +1,8 @@
 <svg width="1200" height="110" viewBox="0 0 1200 110" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Operating system">
   <defs><linearGradient id="a" x1="0" x2="1200" y1="0" y2="0"><stop stop-color="#D789FF"/><stop offset=".52" stop-color="#74A7FF"/><stop offset="1" stop-color="#00E5B0"/></linearGradient></defs>
+  <style>@keyframes header-trace { to { stroke-dashoffset: -150; } } .trace { stroke-dasharray: 110 40; animation: header-trace 3.5s linear infinite; } @media (prefers-reduced-motion: reduce) { .trace { animation: none; } }</style>
   <rect width="1200" height="110" rx="14" fill="#0B1125"/>
-  <path d="M0 88H1200" stroke="#8FA7D8" stroke-opacity=".18"/><path d="M0 88H175" stroke="url(#a)" stroke-width="3"/>
+  <path d="M0 88H1200" stroke="#8FA7D8" stroke-opacity=".18"/><path class="trace" d="M0 88H175" stroke="url(#a)" stroke-width="3"/>
   <text x="0" y="32" fill="#8495BF" font-family="ui-monospace,monospace" font-size="12" letter-spacing="3">02 / OPERATING SYSTEM</text>
   <text x="0" y="74" fill="#E7EDFF" font-family="ui-monospace,monospace" font-weight="700" font-size="34" letter-spacing="-1">HOW I BUILD</text>
   <text x="1198" y="72" fill="#8495BF" font-family="ui-monospace,monospace" font-size="13" text-anchor="end">EVIDENCE OVER VIBES</text>

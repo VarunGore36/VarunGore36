@@ -62,11 +62,7 @@ I build dependable systems for consequential work: infrastructure that is fast u
 <!-- RECENT_REPOS:START -->
 | Project | Latest signal |
 | :-- | :-- |
-| [**toolcage**](https://github.com/VarunGore36/toolcage) | Local-first runtime for securely executing AI agent tools, with capability-based authorization, credential isolation, controlled network egress, and tamper-evident audit logs. · `Rust` · ★ 7<br /><sub>updated Nov 2026</sub> |
-| [**AstralProject**](https://github.com/VarunGore36/AstralProject) | An open, reproducible measurement layer for crypto markets. Deterministic replay, honest cost models, reproducible results. · `Rust` · ★ 4<br /><sub>updated Nov 2026</sub> |
 | [**DepLens**](https://github.com/VarunGore36/DepLens) | DepLens is an investigation into dependency-change impact prediction. The objective is not to assume that reliable prediction is possible, but to determine how far it can be pushed using empirical evidence. · `Python` · ★ 3<br /><sub>updated Oct 2026</sub> |
-| [**ChainLens**](https://github.com/VarunGore36/ChainLens) | High-performance Ethereum blockchain indexer built in Rust and Tokio, featuring concurrent ingestion, canonical-chain tracking, reorg handling, crash-safe recovery, PostgreSQL storage, and reproducible performance benchmarks. · `Rust` · ★ 1<br /><sub>updated Oct 2026</sub> |
-| [**ENAMEL-Extended**](https://github.com/VarunGore36/ENAMEL-Extended) | Reimplementation and extension of ENAMEL, an ICLR 2025 benchmark for rigorously evaluating the efficiency of LLM-generated code · `Python`<br /><sub>updated Sep 2026</sub> |
 | [**ChessEngine**](https://github.com/VarunGore36/ChessEngine) | No description yet.<br /><sub>updated Dec 2025</sub> |
 <!-- RECENT_REPOS:END -->
 

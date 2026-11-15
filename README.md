@@ -1,89 +1,74 @@
 <div align="center">
 
-<img src="assets/pixel-banner.svg" alt="Varun Gore — building reliable systems, one pixel at a time" width="100%" />
+<img src="assets/pixel-banner.svg" alt="Varun Gore — systems architect, security builder, and agent infrastructure engineer" width="100%" />
 
 <br />
 
-[![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=7ee787)](https://github.com/VarunGore36)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=79c0ff)](https://www.linkedin.com/in/varun-gore-14187632a/)
-[![Email](https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=ff7b72)](mailto:varungore1@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=F2CC60)](https://github.com/VarunGore36)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=79C0FF)](https://www.linkedin.com/in/varun-gore/)
+[![Discord](https://img.shields.io/badge/Discord-0D1117?style=for-the-badge&logo=discord&logoColor=C9D1D9)](https://discord.com/users/1279066758300569623)
+[![Email](https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=FF7B72)](mailto:varungore1@gmail.com)
+
+<sub><code>DISCORD · 1279066758300569623</code></sub>
 
 </div>
 
-```text
-> booting profile...
-> status: building dependable systems with Rust, security research, and good questions.
-```
-
 <img src="assets/pixel-divider.svg" alt="Animated pixel divider" width="100%" />
 
-## `~/now`
+## `WELCOME TO THE WORKSHOP`
 
-I build infrastructure that can explain itself—systems with clear boundaries, reproducible results, and an honest record when something fails.
+I build dependable systems for consequential work: infrastructure that is fast under pressure, clear at its boundaries, and candid about its failure modes. My home turf is systems engineering, agent security, developer tooling, and measurement that survives contact with reality.
 
-| Quest | Current save point |
-| :-- | :-- |
-| `01 / Agent safety` | Giving agents constrained tools, least-privilege credentials, controlled egress, and audit trails. |
-| `02 / Evidence first` | Building benchmarks with their environment and limits intact—confidence should be earned. |
-| `03 / Rust core` | Making systems software and developer tools fast, inspectable, and pleasant to operate. |
+<img src="assets/luxury-console.svg" alt="A pixel-art systems console showing reliability, security, and evidence as online" width="100%" />
 
 <div align="center">
-  <img src="koi/koi.gif" width="320" alt="A Git Koi drawn from my GitHub activity" />
+  <img src="koi/koi.gif" width="360" alt="A Git Koi drawn from my GitHub activity" />
   <br />
-  <sub>my activity, swimming as a <a href="https://github.com/yalongwastaken/git-koi">Git Koi</a></sub>
+  <sub><i>Activity rendered nightly as a living <a href="https://github.com/yalongwastaken/git-koi">Git Koi</a>.</i></sub>
 </div>
 
 <img src="assets/pixel-divider.svg" alt="Animated pixel divider" width="100%" />
 
-## `~/selected-projects`
+## `SELECTED BUILDS`
 
-### [01 — Toolcage](https://github.com/VarunGore36/toolcage)
-**A local-first security runtime for AI agents.** Policy enforcement, credential brokering, controlled network access, and tamper-evident audit logs live between an agent and the systems it can affect.
-
-`Rust` `Linux` `MCP` `Security` · 72 tests · 404 ns policy-decision p99
-
-### [02 — AstralProject](https://github.com/VarunGore36/AstralProject)
-**Reproducible crypto-market measurement.** Lossless market-data capture, deterministic replay, and honest cost models for research and simulation—not just backtests that look good in hindsight.
-
-`Rust` `Market data` `Replay` · 300/300 top-of-book checks · [project site](https://astral-project-ruddy.vercel.app/)
-
-### [03 — ChainLens](https://github.com/VarunGore36/ChainLens)
-**Ethereum indexing designed around failure modes.** A concurrent Rust indexer with canonical-chain tracking, reorg handling, crash-safe recovery, and PostgreSQL storage.
-
-`Rust` `Tokio` `PostgreSQL` · 232 tests · [project site](https://chain-lens-chi.vercel.app/)
-
-### [04 — ENAMEL-Extended](https://github.com/VarunGore36/ENAMEL-Extended)
-**An open evaluation harness for LLM-generated code.** Built to make code-efficiency evaluation easier to run, inspect, and compare.
-
-`Python` `LLM evaluation` `Reproducibility` · 13 models · 161 problems · [project site](https://enamel-extended.vercel.app/)
+| | Build | What it does |
+| :--: | :-- | :-- |
+| `01` | [**Toolcage**](https://github.com/VarunGore36/toolcage) | A local-first security runtime for AI agents: policy enforcement, credential brokering, controlled egress, and tamper-evident audit logs. `Rust` `Linux` `MCP` `Security` |
+| `02` | [**AstralProject**](https://github.com/VarunGore36/AstralProject) | Reproducible crypto-market measurement through lossless capture, deterministic replay, and honest cost models. [Project site](https://astral-project-ruddy.vercel.app/) |
+| `03` | [**ChainLens**](https://github.com/VarunGore36/ChainLens) | An Ethereum indexer built for failure modes: reorg-aware, crash-safe, concurrent, and backed by PostgreSQL. [Project site](https://chain-lens-chi.vercel.app/) |
+| `04` | [**ENAMEL-Extended**](https://github.com/VarunGore36/ENAMEL-Extended) | An open harness for running, inspecting, and comparing LLM-generated-code evaluations. [Project site](https://enamel-extended.vercel.app/) |
 
 <img src="assets/pixel-divider.svg" alt="Animated pixel divider" width="100%" />
 
-## `~/inventory`
+## `THE ARMORY`
 
-<div align="center">
+<img src="assets/stack-vault.svg" alt="Technology stack: C, C++, Rust, Python, TypeScript, SQL, Bash, Linux, Docker, PostgreSQL, GitHub Actions, Tokio, Axum, SQLx, Alloy, Prometheus, Grafana, pytest, Ruff, uv, NumPy, Matplotlib, vLLM, and EvalPlus" width="100%" />
 
-![Rust](https://img.shields.io/badge/Rust-161b22?style=for-the-badge&logo=rust&logoColor=f0883e)
-![Python](https://img.shields.io/badge/Python-161b22?style=for-the-badge&logo=python&logoColor=79c0ff)
-![TypeScript](https://img.shields.io/badge/TypeScript-161b22?style=for-the-badge&logo=typescript&logoColor=58a6ff)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-161b22?style=for-the-badge&logo=postgresql&logoColor=79c0ff)
-![Docker](https://img.shields.io/badge/Docker-161b22?style=for-the-badge&logo=docker&logoColor=58a6ff)
-![Linux](https://img.shields.io/badge/Linux-161b22?style=for-the-badge&logo=linux&logoColor=f2cc60)
+<details>
+<summary><b>full stack manifest</b></summary>
 
-</div>
+<br />
+
+`C` · `C++` · `Rust` · `Python` · `TypeScript` · `SQL` · `Bash`<br />
+`Linux` · `Docker` · `PostgreSQL` · `GitHub Actions` · `Prometheus` · `Grafana`<br />
+`Tokio` · `Axum` · `SQLx` · `Alloy` · `pytest` · `Ruff` · `uv` · `NumPy` · `Matplotlib` · `vLLM` · `EvalPlus`
+
+</details>
 
 ```text
-// operating principles
+// operating system
 determinism > vibes
 fail closed
 measure the boundary
-leave the rough edges visible
+keep the rough edges visible
 ```
 
 <div align="center">
 
+<a href="https://discord.com/users/1279066758300569623"><img src="assets/contact-terminal.svg" alt="Contact Varun on Discord: 1279066758300569623" width="100%" /></a>
+
 <img src="assets/pixel-footer.svg" alt="Build systems. Leave evidence." width="100%" />
 
-<sub>open to interesting systems, security, and developer-tooling conversations</sub>
+<sub>open to systems, security, and developer-tooling conversations</sub>
 
 </div>

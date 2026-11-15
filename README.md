@@ -62,10 +62,7 @@ I build dependable systems for consequential work: infrastructure that is fast u
 _Public repositories I created or pushed to during the last 24 hours, across GitHub._
 
 <!-- RECENT_REPOS:START -->
-| Project | Latest signal |
-| :-- | :-- |
-| [**DepLens**](https://github.com/VarunGore36/DepLens) | DepLens is an investigation into dependency-change impact prediction. The objective is not to assume that reliable prediction is possible, but to determine how far it can be pushed using empirical evidence. · `Python` · ★ 3<br /><sub>updated Oct 2026</sub> |
-| [**ChessEngine**](https://github.com/VarunGore36/ChessEngine) | No description yet.<br /><sub>updated Dec 2025</sub> |
+_No public repositories created or pushed to in the last 24 hours._
 <!-- RECENT_REPOS:END -->
 
 ```text

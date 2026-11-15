@@ -42,7 +42,7 @@ I build dependable systems for consequential work: infrastructure that is fast u
 
 ## `THE ARMORY`
 
-<img src="assets/stack-vault.svg?v=3" alt="Technology stack: C, C++, Rust, Python, TypeScript, SQL, Bash, Linux, Docker, PostgreSQL, GitHub Actions, Tokio, Axum, SQLx, Alloy, Prometheus, Grafana, pytest, Ruff, uv, NumPy, Matplotlib, vLLM, and EvalPlus" width="100%" />
+<img src="assets/pixel-workstation.svg" alt="A pixel-art development workstation representing Varun's technology stack" width="100%" />
 
 <details>
 <summary><b>full stack manifest</b></summary>

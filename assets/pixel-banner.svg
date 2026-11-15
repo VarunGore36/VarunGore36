@@ -1,0 +1,17 @@
+<svg width="1200" height="390" viewBox="0 0 1200 390" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Varun Gore — Systems, Security, and Agent Infrastructure</title>
+  <desc id="desc">An animated pixel-art night scene with a moon, mountains, and a small explorer.</desc>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#1f6feb" stroke-opacity=".13"/></pattern>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#0d1117"/><stop offset="1" stop-color="#111b30"/></linearGradient>
+    <style>.blink{animation:blink 1.4s steps(1) infinite}.float{animation:float 3s ease-in-out infinite}.scan{animation:scan 5s linear infinite}@keyframes blink{0%,43%,48%,100%{opacity:1}44%,47%{opacity:0}}@keyframes float{50%{transform:translateY(-7px)}}@keyframes scan{from{transform:translateX(-250px)}to{transform:translateX(1300px)}}@media(prefers-reduced-motion:reduce){.blink,.float,.scan{animation:none}}</style>
+  </defs>
+  <rect width="1200" height="390" rx="18" fill="url(#sky)"/><rect width="1200" height="390" rx="18" fill="url(#grid)"/>
+  <g class="float" transform="translate(910 54)"><rect x="24" width="72" height="72" fill="#f2cc60"/><rect y="24" width="120" height="24" fill="#f2cc60"/><rect x="24" y="24" width="72" height="24" fill="#fff8c5" opacity=".6"/></g>
+  <g fill="#79c0ff" opacity=".8"><rect x="82" y="68" width="7" height="7"/><rect x="190" y="128" width="5" height="5"/><rect x="434" y="63" width="6" height="6"/><rect x="765" y="102" width="5" height="5"/><rect x="1085" y="161" width="7" height="7"/></g>
+  <path d="M0 270L95 188L164 246L272 146L367 237L480 173L581 255L702 128L822 234L924 164L1048 259L1136 186L1200 239V326H0V270Z" fill="#182a45"/><path d="M0 303L137 222L233 294L344 211L465 297L592 232L731 304L846 209L980 296L1091 229L1200 302V365H0V303Z" fill="#233a5e"/>
+  <path d="M0 334H1200V390H0V334Z" fill="#0d1117"/><path d="M0 334H1200" stroke="#7ee787" stroke-width="4"/><g class="scan" opacity=".75"><rect y="332" width="170" height="5" fill="#58a6ff"/><rect x="24" y="343" width="80" height="3" fill="#f2cc60"/></g>
+  <g transform="translate(100 228)"><rect x="18" width="18" height="18" fill="#f2cc60"/><rect x="12" y="18" width="30" height="42" fill="#79c0ff"/><rect x="6" y="30" width="12" height="24" fill="#79c0ff"/><rect x="36" y="30" width="12" height="24" fill="#79c0ff"/><rect x="12" y="60" width="12" height="18" fill="#8b949e"/><rect x="30" y="60" width="12" height="18" fill="#8b949e"/><rect x="24" y="24" width="6" height="6" fill="#0d1117"/></g>
+  <g fill="#e6edf3"><text x="100" y="118" font-family="monospace" font-size="18" letter-spacing="5">HELLO, WORLD_</text><text x="100" y="183" font-family="monospace" font-size="54" font-weight="bold">VARUN GORE</text><text x="103" y="218" font-family="monospace" font-size="18" fill="#7ee787">SYSTEMS / SECURITY / AGENT INFRASTRUCTURE</text></g><rect class="blink" x="108" y="99" width="12" height="4" fill="#7ee787"/>
+  <rect x="102" y="350" width="210" height="18" fill="#161b22" stroke="#30363d"/><text x="112" y="364" font-family="monospace" font-size="10" fill="#7ee787">STATUS: ONLINE</text>
+</svg>

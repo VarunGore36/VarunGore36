@@ -57,7 +57,9 @@ I build dependable systems for consequential work: infrastructure that is fast u
 
 <img src="assets/pixel-divider.svg" alt="Animated pixel divider" width="100%" />
 
-## `RECENTLY SHIPPED`
+## `LAST 24 HOURS ON GITHUB`
+
+_Public repositories I created or pushed to during the last 24 hours, across GitHub._
 
 <!-- RECENT_REPOS:START -->
 | Project | Latest signal |

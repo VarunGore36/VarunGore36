@@ -4,6 +4,7 @@ const owner = process.env.GITHUB_REPOSITORY_OWNER;
 const token = process.env.GITHUB_TOKEN;
 const readmePath = "README.md";
 const endpoint = `https://api.github.com/users/${owner}/repos?type=owner&sort=updated&direction=desc&per_page=100`;
+const featuredRepos = new Set(["toolcage", "astralproject", "chainlens", "enamel-extended"]);
 
 const response = await fetch(endpoint, {
   headers: {
@@ -16,7 +17,7 @@ const response = await fetch(endpoint, {
 if (!response.ok) throw new Error(`GitHub API request failed: ${response.status}`);
 
 const repos = (await response.json())
-  .filter((repo) => !repo.fork && !repo.archived && repo.name !== owner)
+  .filter((repo) => !repo.fork && !repo.archived && repo.name !== owner && !featuredRepos.has(repo.name.toLowerCase()))
   .slice(0, 6);
 
 const formatDate = (value) => new Intl.DateTimeFormat("en", {

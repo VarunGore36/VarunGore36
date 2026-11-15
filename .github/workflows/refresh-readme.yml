@@ -1,0 +1,42 @@
+name: Refresh README repository feed
+
+on:
+  schedule:
+    - cron: "10 1 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/refresh-readme.yml
+      - .github/scripts/update-recent-repos.mjs
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Refresh recent projects
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/update-recent-repos.mjs
+      - name: Commit README if it changed
+        shell: bash
+        run: |
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "The README is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --quiet --message "chore: refresh recent repositories"
+          git push --quiet

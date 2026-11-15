@@ -42,7 +42,7 @@ I build dependable systems for consequential work: infrastructure that is fast u
 
 ## `THE ARMORY`
 
-<img src="assets/stack-vault.svg" alt="Technology stack: C, C++, Rust, Python, TypeScript, SQL, Bash, Linux, Docker, PostgreSQL, GitHub Actions, Tokio, Axum, SQLx, Alloy, Prometheus, Grafana, pytest, Ruff, uv, NumPy, Matplotlib, vLLM, and EvalPlus" width="100%" />
+<img src="assets/stack-vault.svg?v=3" alt="Technology stack: C, C++, Rust, Python, TypeScript, SQL, Bash, Linux, Docker, PostgreSQL, GitHub Actions, Tokio, Axum, SQLx, Alloy, Prometheus, Grafana, pytest, Ruff, uv, NumPy, Matplotlib, vLLM, and EvalPlus" width="100%" />
 
 <details>
 <summary><b>full stack manifest</b></summary>
@@ -54,6 +54,14 @@ I build dependable systems for consequential work: infrastructure that is fast u
 `Tokio` · `Axum` · `SQLx` · `Alloy` · `pytest` · `Ruff` · `uv` · `NumPy` · `Matplotlib` · `vLLM` · `EvalPlus`
 
 </details>
+
+<img src="assets/pixel-divider.svg" alt="Animated pixel divider" width="100%" />
+
+## `RECENTLY SHIPPED`
+
+<!-- RECENT_REPOS:START -->
+_The repository feed refreshes automatically._
+<!-- RECENT_REPOS:END -->
 
 ```text
 // operating system

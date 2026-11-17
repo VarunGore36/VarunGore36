@@ -62,9 +62,7 @@ I build dependable systems for consequential work: infrastructure that is fast u
 _Public repositories I created or pushed to during the last 24 hours, across GitHub._
 
 <!-- RECENT_REPOS:START -->
-| Project | Activity in the last 24 hours |
-| :-- | :-- |
-| [**regime-classifier**](https://github.com/VarunGore36/regime-classifier) | No description yet.<br /><sub>activity Nov 2026</sub> |
+_No public repositories created or pushed to in the last 24 hours._
 <!-- RECENT_REPOS:END -->
 
 ```text

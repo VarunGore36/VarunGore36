@@ -64,7 +64,6 @@ _Public repositories I created or pushed to during the last 24 hours, across Git
 <!-- RECENT_REPOS:START -->
 | Project | Activity in the last 24 hours |
 | :-- | :-- |
-| [**regime-classifier**](https://github.com/VarunGore36/regime-classifier) | No description yet. · `Python`<br /><sub>activity Nov 2026</sub> |
 | [**GeoMind**](https://github.com/VarunGore36/GeoMind) | AI-powered geospatial intelligence API that converts satellite imagery and geographic datasets into structured, actionable intelligence. · `Python`<br /><sub>activity Nov 2026</sub> |
 <!-- RECENT_REPOS:END -->
 

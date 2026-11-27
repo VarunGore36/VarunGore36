@@ -62,7 +62,9 @@ I build dependable systems for consequential work: infrastructure that is fast u
 _Public repositories I created or pushed to during the last 24 hours, across GitHub._
 
 <!-- RECENT_REPOS:START -->
-_No public repositories created or pushed to in the last 24 hours._
+| Project | Activity in the last 24 hours |
+| :-- | :-- |
+| [**GeoMind**](https://github.com/VarunGore36/GeoMind) | AI-powered geospatial intelligence API that converts satellite imagery and geographic datasets into structured, actionable intelligence. · `Python`<br /><sub>activity Nov 2026</sub> |
 <!-- RECENT_REPOS:END -->
 
 ```text
